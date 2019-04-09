@@ -3,10 +3,10 @@ const client = new discord.Client();
 const command = require('./modules/commands.js');
 const moment = require('moment');
 
-const token = 'TOKENHERE'
+const token = 'TOKENHERE';
 
 client.on('ready', () => {
-    console.log('Connected.')
+    console.log('Connected.');
     client.user.setActivity('>hangout', { type: 'WATCHING' })
 });
 
