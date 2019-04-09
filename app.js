@@ -3,6 +3,8 @@ const client = new discord.Client();
 const command = require('./modules/commands.js');
 const moment = require('moment');
 
+const token = 'TOKENHERE'
+
 client.on('ready', () => {
     console.log('Connected.')
     client.user.setActivity('>hangout', { type: 'WATCHING' })
@@ -56,6 +58,6 @@ client.on('voiceStateUpdate', (then, now) => {
     }
 });
 
-client.login('NTUzNzI3NTc4MDcwOTc0NDY0.XKwhqA.zKGGNcrw_hHccwGsEhQkPFYQ4C4');
+client.login(token);
 
 module.exports = client;
