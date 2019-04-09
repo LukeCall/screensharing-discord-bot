@@ -14,4 +14,4 @@ This bot was made to allow the use of a little trick found to utilise channel sc
 
 ### Who do I credit?
 **Myself** for converting the idea and project into a functioning NodeJS app with added security.
-[**Jumpz12**](https://github.com/Jumpz12) for coming up with the initial idea and creating it into a Python app.
+<br />[**Jumpz12**](https://github.com/Jumpz12) for coming up with the initial idea and creating it into a Python app.
