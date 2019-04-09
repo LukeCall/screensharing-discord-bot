@@ -1,0 +1,12 @@
+{
+  "name": "screenshare-discord-bot",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./app.js"
+  },
+  "dependencies": {
+    "discord.js": "^11.4.2",
+    "moment": "^2.24.0"
+  }
+}
