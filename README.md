@@ -11,6 +11,37 @@ I also should note, you can easily add any other commands to the bot as long as 
 
 For more help with `discord.js` you should visit the [documentation](https://discord.js.org/#/docs/main/stable/general/welcome).
 
+#### Example Ping Command
+```javascript
+// Always required.
+const discord = require('discord.js');
+// Not always required but can be helpful for some discord.js functions.
+// In this case it's for show.
+const client = require('../../app.js');
+
+// Currently used to show the latency within embeds within this specific command.
+const moment = require('moment');
+
+module.exports = {
+    // Name of the command, used for the command's alias.
+    name: 'ping',
+    // Description of the command, currently no use.
+    description: 'Ping the bot.',
+    // Executed upon the running of the command. (Args parameter includes the command as index 0)
+    execute: function(msg, args) { 
+        const then = moment()
+        msg.channel.send('Pinging...').then(m =>{
+            let embed = new discord.RichEmbed()
+                .setDescription('Pong!')
+                .setColor(0x59b1ff)
+                .setFooter(`${moment() - then}ms Latency`)
+                .setTimestamp(new Date());
+            m.edit({embed});
+        })
+    }
+};
+```
+
 ### What else is there to do?
 * Create a better way of storing sessions to allow inviting people after creation.
     * _Current way involves checking the timestamps of invites compared to channels._
