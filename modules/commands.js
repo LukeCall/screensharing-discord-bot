@@ -1,7 +1,6 @@
 const discord = require('discord.js');
 const client = require('../app.js');
 
-// TODO: Universally organise this when cleaning requires.
 const prefix = ">";
 
 const fs = require('fs');
