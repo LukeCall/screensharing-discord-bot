@@ -1,5 +1,5 @@
-const discord = require('discord.js'); // Always required.
-const client = require('../../app.js'); // Not always required but can be helpful for some discord.js functions. In this case it's here for show.
+const discord = require('discord.js'); // These are not always required but can be helpful for some discord.js functions.
+const client = require('../../app.js'); // In this case they're for show.
 
 const moment = require('moment'); // Currently used to show the latency within embeds within this specific command.
 

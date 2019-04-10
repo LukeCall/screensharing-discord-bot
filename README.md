@@ -13,10 +13,9 @@ For more help with `discord.js` you should visit the [documentation](https://dis
 
 #### Example Ping Command
 ```javascript
-// Always required.
+// These are not always required but can be helpful for some discord.js functions.
+// In this case they're for show.
 const discord = require('discord.js');
-// Not always required but can be helpful for some discord.js functions.
-// In this case it's for show.
 const client = require('../../app.js');
 
 // Currently used to show the latency within embeds within this specific command.
