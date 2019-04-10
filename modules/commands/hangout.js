@@ -1,11 +1,12 @@
-const discord = require('discord.js');
-const client = require('../../app.js');
-const moment = require('moment');
+const discord = require('discord.js'); // Always required.
+const client = require('../../app.js'); // Not always required but can be helpful for some discord.js functions. In this case it's here for show.
+
+const moment = require('moment'); // Currently used to show the latency within embeds within this specific command.
 
 module.exports = {
-    name: 'hangout',
-    description: 'Start a hangout.',
-    execute: function(msg, args) {
+    name: 'hangout', // Name of the command, used for the command's alias.
+    description: 'Start a hangout.', // Description of the command, currently no use.
+    execute: function(msg, args) { // Executed upon the running of the command. (Args parameter includes the command as index 0)
         let embed;
         const then = moment();
         msg.channel.send('Creating...').then(m =>{
