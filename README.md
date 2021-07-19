@@ -1,4 +1,4 @@
-###Deprecated###
+### Deprecated
 Unfortunately this "exploit" is no longer viable and most probably patched due to it being a released feature.
 
 ### Screensharing Discord Bot
