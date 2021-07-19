@@ -1,3 +1,6 @@
+###Deprecated###
+Unfortunately this "exploit" is no longer viable and most probably patched due to it being a released feature.
+
 ### Screensharing Discord Bot
 This bot was made to allow the use of a little trick found to utilise channel screen sharing without the need of a server with the functionality.
 
